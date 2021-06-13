@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/site-admins",
+      "handler": "site-admin.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/site-admins/count",
+      "handler": "site-admin.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/site-admins/:id",
+      "handler": "site-admin.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/site-admins",
+      "handler": "site-admin.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/site-admins/:id",
+      "handler": "site-admin.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/site-admins/:id",
+      "handler": "site-admin.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

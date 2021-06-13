@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tours",
+  "info": {
+    "name": "Tours",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "Departure_Day": {
+      "type": "date"
+    },
+    "No_Of_Days": {
+      "type": "integer"
+    },
+    "Venue": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Plan": {
+      "type": "text"
+    },
+    "Seats": {
+      "type": "integer"
+    },
+    "company_id": {
+      "model": "company"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Family",
+        "Group",
+        "Couple"
+      ],
+      "default": "Group",
+      "required": true
+    },
+    "logo": {
+      "type": "text"
+    },
+    "tourists": {
+      "collection": "tourist"
+    }
+  }
+}

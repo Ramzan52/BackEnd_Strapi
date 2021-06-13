@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "name": "Reviews"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "company_id": {
+      "model": "company"
+    },
+    "tourist": {
+      "model": "tourist"
+    },
+    "comments": {
+      "type": "text"
+    }
+  }
+}

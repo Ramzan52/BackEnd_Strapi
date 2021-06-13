@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tourists",
+  "info": {
+    "name": "Tourist",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Firstname": {
+      "type": "string"
+    },
+    "Number": {
+      "type": "biginteger"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "Lname": {
+      "type": "string"
+    },
+    "company": {
+      "model": "company"
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "user",
+        "owner",
+        "admin"
+      ],
+      "default": "user"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "tourist_id"
+    },
+    "Cnic": {
+      "type": "biginteger"
+    }
+  }
+}

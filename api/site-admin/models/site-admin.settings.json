@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "site_admins",
+  "info": {
+    "name": "Site_Admin"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "User": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Password": {
+      "type": "password"
+    },
+    "Phone_No": {
+      "type": "biginteger"
+    }
+  }
+}
